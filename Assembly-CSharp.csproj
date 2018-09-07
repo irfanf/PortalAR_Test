@@ -191,15 +191,16 @@
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
      <Compile Include="Assets\PortalAR\Scripts\ARController.cs" />
      <Compile Include="Assets\PortalAR\Scripts\GridVisualizer.cs" />
+     <Compile Include="Assets\PortalAR\Scripts\PortalManager.cs" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
-     <None Include="Assets\PortalAR\Models\Materials\Sponza.shader" />
+     <None Include="Assets\PortalAR\Materials\Sponza\Sponza.shader" />
      <None Include="Assets\PortalAR\Models\LICENSE.txt" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
      <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
-     <None Include="Assets\PortalAR\Models\Materials\PortalPlane.shader" />
+     <None Include="Assets\PortalAR\Materials\PortalPlane.shader" />
      <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
-     <None Include="Assets\PortalAR\Models\Materials\Portal.shader" />
+     <None Include="Assets\PortalAR\Materials\Portal.shader" />
      <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/lampe/OneDrive/ドキュメント/Unity/PortalAR_Test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
