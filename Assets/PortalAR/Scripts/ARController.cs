@@ -12,15 +12,10 @@ public class ARController : MonoBehaviour
     //planes that ARCore detected in the current frames
     private List<TrackedPlane> newTrackedPlanes = new List<TrackedPlane>();
 
+    public GameObject MainCamera;
     public GameObject GridPrefab;
 
     public GameObject Portal;
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -46,7 +41,7 @@ public class ARController : MonoBehaviour
 
         //Let's now check if the user touched any of the tracked planes
         TrackableHit hit;
-        if( Frame.Raycast(touch.position.x, touch.position.y, TrackableHitFlags.PlaneWithinPolygon, out hit))
+        if (Frame.Raycast(touch.position.x, touch.position.y, TrackableHitFlags.PlaneWithinPolygon, out hit))
         {
             // Let's now place the portal on top of the tracked plane that we touched
 
@@ -61,7 +56,7 @@ public class ARController : MonoBehaviour
             Portal.transform.rotation = hit.Pose.rotation;
 
             //We want the portal to face the camera
-            Vector3 cameraPosition = Camera.main.transform.position;
+            Vector3 cameraPosition = MainCamera.transform.position;
 
             //Rotate the portal to face the camera
             Portal.transform.LookAt(cameraPosition, Portal.transform.up);
